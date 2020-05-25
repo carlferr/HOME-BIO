@@ -21,15 +21,23 @@ docker pull biohaz/shome_bio:latest
 
 ### 3.1 Prepare the Config file
 
-To run the pipeline, just manually change the "config.txt" file to choose the correct options for your analysis. You can find an example of "config file" in this repository.
+To run SHOME-BIO, just download this repository and manually change the "config.txt" file in it. In this way, it is possible to choose the correct options for your analysis.
 
 ### 3.2 - Download the databases
 
-In order to run a metagenomic analysis, you should download different genome reference for bacteria and virus.
-You can download them directly from here ()
-You can also download a test data folder with two .fastq files here ()
+In order to run a metagenomic analysis, you should download different genome reference for bacteria, protozoa or virus.
+We provide them and you can download them directly from here ().
+We also provide a test data folder with two .fastq files and you can download them here () (this is optional).
 
+### 3.3 - Run the Script.py
 
+It is possible now to run SHOME-BIO just typing in the console
+
+```
+python ./Script.py
+```
+
+The script automatically will call the docker container and it will launch the analysis.
 
 ## 4 - LICENSE
 This is a free pipeline: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
