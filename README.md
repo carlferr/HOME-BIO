@@ -26,11 +26,7 @@ To run the pipeline, just manually change the "config.txt" file to choose the co
 ### 3.2 - Download the databases
 
 In order to run a metagenomic analysis, you should download different genome reference for bacteria and virus.
-You can download them directly from here
-```
-http://
-```
-
+You can download them directly from here ()
 You can also download a test data folder with two .fastq files here ()
 
 
