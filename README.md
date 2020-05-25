@@ -21,15 +21,17 @@ docker pull biohaz/shome_bio:latest
 
 ### 3.1 Prepare the Config file
 
-To run the pipeline, just manually change the "Config.txt" file to choose the correct options for your analysis. You can find an example of Config file in this repository.
+To run the pipeline, just manually change the "config.txt" file to choose the correct options for your analysis. You can find an example of "config file" in this repository.
 
 ### 3.2 - Download the databases
 
 In order to run a metagenomic analysis, you should download different genome reference for bacteria and virus.
-You can download them directly from here () and then build them using these commands:
+You can download them directly from here
 ```
+http://
 ```
 
+You can also download a test data folder with two .fastq files here ()
 
 
 
