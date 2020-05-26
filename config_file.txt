@@ -1,0 +1,38 @@
+Quality_Control_Before_Trimming [yes/no] default -> no
+no
+
+Quality_Control_After_Trimming [yes/no] default -> no
+no
+
+n_thread? default -> 1
+16
+
+Path_Fastq
+/mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Script/Input/
+
+Pairend?
+yes
+
+Path_output? 
+/mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Script/Output/
+
+Path_Genome
+/mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Genome/CanFam3.1/Sequence/Bowtie2Index/genome
+
+Delete host organism [yes/no] default -> no
+no
+
+Path_host_organism
+/mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Genome/CanFam3.1/Sequence/Bowtie2Index/genome
+
+Adapter
+CTGTCTCTTATA
+
+Shotgun [yes/no] default -> no
+yes
+
+DeNovo [yes/no] default -> no
+yes
+
+
+
