@@ -16,10 +16,10 @@ Run DOCKER on your PC or server and  install our Docker image pulling it from he
 docker pull biohaz/shome_bio:latest
 ```
 
-Now, just download this repository or 
+Now, just download this repository or, in your console, type: 
 
 ```
-docker pull biohaz/shome_bio:latest
+git clone https://github.com/carlferr/SHOME-BIO.git
 ```
 
 
