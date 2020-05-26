@@ -11,7 +11,7 @@ To use our pipeline, it is mandatory to install and run DOCKER (https://hub.dock
 
 ## 2 - PIPELINE INSTALLATION
 
-Run DOCKER on your PC or server and  install our Docker image pulling it from here (https://hub.docker.com/r/biohaz/metagenomic) or just type in your console:
+Run DOCKER on your PC or server and  install our Docker image pulling it from here (https://hub.docker.com/r/biohaz/shome_bio) or just type in your console:
 ```
 docker pull biohaz/shome_bio:latest
 ```
