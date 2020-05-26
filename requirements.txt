@@ -1,9 +1,0 @@
-fastqc
-multiqc
-trimmomatic
-cutadapt
-kraken2
-bracken
-spades
-kaiju
-krona
