@@ -27,7 +27,7 @@ git clone https://github.com/carlferr/SHOME-BIO.git
 
 ### 3.1 Prepare the Config file
 
-Before run SHOME-BIO, manually change the "config_file.txt". In this way, it is possible to choose the correct options for your analysis.
+Before run SHOME-BIO, manually change the "config_file.txt". In this way, it is possible to choose the correct options for your analysis. The user can modify this file following the written examples. For some options is mandatory a complete path, while others just require a "yes" or "no". Only the "Adapter" option requires a sequence to use as adapter during the trimming step.
 
 ### 3.2 - Download the databases
 
