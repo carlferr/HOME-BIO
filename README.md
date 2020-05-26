@@ -27,7 +27,7 @@ git clone https://github.com/carlferr/SHOME-BIO.git
 
 ### 3.1 Prepare the Config file
 
-To run SHOME-BIO, just download this repository and manually change the "config.txt" file in it. In this way, it is possible to choose the correct options for your analysis.
+Before run SHOME-BIO, manually change the "config_file.txt". In this way, it is possible to choose the correct options for your analysis.
 
 ### 3.2 - Download the databases
 
@@ -37,13 +37,13 @@ We also provide a test data folder with two .fastq files and you can download th
 
 ### 3.3 - Run the Script.py
 
-It is possible now to run SHOME-BIO just typing in the console
+It is possible, now, to run SHOME-BIO just typing in the console:
 
 ```
-python ./Script.py
+docker run -it --rm -v /your_path/SHOME-BIO/Script.py:/home/Script.py:ro -v /your_path/SHOME-BIO/config_file.txt:/home/config.txt:ro -v /your_fastq_path/Fastq_folder:/home/Input:ro -v /your_output_folder:/home/Output:rw -v /your_hg19_path/Bowtie2Index:/home/Genome:ro -v /your_path/KRAKENdb_bacteria:/home/Db_Kraken2_Kaiju_bacteria:ro -v /your_path/KRAKENdb_protozoa:/home/Db_Kraken2_Kaiju_protozoa:ro -v /your_path/KRAKENdb_viruses:/home/Db_Kraken2_Kaiju_viruses:ro -v /your_path/KAIJUdb:/home/Db_Kaiju:ro -v /your_path/KAIJUdb_virus:/home/Db_Kaiju_virus:ro   biohaz/shome_bio
 ```
-
-The script automatically will call the docker container and it will launch the analysis.
+Please change "your_path" with your exact path. Each path after the -v option will be imported in the Docker container.
+Running this command in your console, automatically it will call the Docker container and it will launch the analysis.
 
 ## 4 - LICENSE
 This is a free pipeline: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
