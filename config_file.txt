@@ -1,37 +1,37 @@
-Quality_Control_Before_Trimming [yes/no] default -> no
+Quality Control before Trimming [yes/no] default -> no
 no
 
-Quality_Control_After_Trimming [yes/no] default -> no
+Quality Control after Trimming [yes/no] default -> no
 no
 
-n_thread? default -> 1
+Number of thread? default -> 1
 16
 
-Path_Fastq
+Path Fastq
 /mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Script/Input/
 
 Pairend? [yes/no] default -> yes
 yes
 
-Path_output? 
+Path output? 
 /mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Script/Output/
 
-Path_Genome
+Path host genome?
 /mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Genome/CanFam3.1/Sequence/Bowtie2Index/genome
 
-Delete host organism [yes/no] default -> no
+Filter out contaminant? [yes/no] default -> no
 no
 
-Path_host_organism
+Path contaminant genome?
 /mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Genome/CanFam3.1/Sequence/Bowtie2Index/genome
 
-Adapter
+Adapter?
 CTGTCTCTTATA
 
-Shotgun [yes/no] default -> no
+Shotgun? [yes/no] default -> no
 yes
 
-DeNovo [yes/no] default -> no
+DeNovo? [yes/no] default -> no
 yes
 
 
