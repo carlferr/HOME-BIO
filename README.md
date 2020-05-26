@@ -32,10 +32,9 @@ Before run SHOME-BIO, manually change the "config_file.txt". In this way, it is 
 ### 3.2 - Download the databases
 
 In order to run a metagenomic analysis, you should download different genome reference for bacteria, protozoa or virus.
-We provide them and you can download them directly from here ().
-We also provide a test data folder with two .fastq files and you can download them here () (this is optional).
+We provide them and you can download them directly from here (https://drive.google.com/drive/folders/17PrBIJAjBP6XApBEvfBOsxfYliMsyVgf?usp=sharing). Inside the "Input" folder, it is also possible to download two .fastq test files in order to test the pipeline (this is optional).
 
-### 3.3 - Run the Script.py
+### 3.3 - Run the pipeline
 
 It is possible, now, to run SHOME-BIO just typing in the console:
 
