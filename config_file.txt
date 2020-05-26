@@ -10,7 +10,7 @@ n_thread? default -> 1
 Path_Fastq
 /mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Script/Input/
 
-Pairend?
+Pairend? [yes/no] default -> yes
 yes
 
 Path_output? 
