@@ -8,22 +8,22 @@ Number of threads? default -> 1
 16
 
 Path Fastq?
-/mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Script/Input/
+/your_path/SHOME-BIO/Input/
 
 Pairend? [yes/no] default -> yes
 yes
 
 Path output? 
-/mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Script/Output/
+/your_path/SHOME-BIO/Output/
 
 Path host genome?
-/mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Genome/CanFam3.1/Sequence/Bowtie2Index/genome
+/your_path/Genome/
 
 Filter out contaminant? [yes/no] default -> no
 no
 
 Path contaminant genome?
-/mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Genome/CanFam3.1/Sequence/Bowtie2Index/genome
+/your_path/Genome/
 
 Adapter?
 CTGTCTCTTATA
