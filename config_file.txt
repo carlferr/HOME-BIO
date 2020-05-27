@@ -10,7 +10,7 @@ Number of threads? default -> 1
 Path Fastq?
 /your_path/SHOME-BIO/Input/
 
-Pairend? [yes/no] default -> yes
+Paired-end? [yes/no] default -> yes
 yes
 
 Path output? 
