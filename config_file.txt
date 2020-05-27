@@ -1,13 +1,13 @@
-Quality Control before Trimming [yes/no] default -> no
+Quality Control before Trimming? [yes/no] default -> no
 no
 
-Quality Control after Trimming [yes/no] default -> no
+Quality Control after Trimming? [yes/no] default -> no
 no
 
-Number of thread? default -> 1
+Number of threads? default -> 1
 16
 
-Path Fastq
+Path Fastq?
 /mnt/NFS_SHARE_3/Carlo/Ilenia_Cane/Script/Input/
 
 Pairend? [yes/no] default -> yes
