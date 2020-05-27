@@ -27,12 +27,13 @@ git clone https://github.com/carlferr/SHOME-BIO.git
 
 ### 3.1 Prepare the Config file
 
-Before run SHOME-BIO, manually change the "config_file.txt". In this way, it is possible to choose the correct options for your analysis. The user can modify this file following the written examples. For some options is mandatory a complete path, while others just require a "yes" or "no". Only the "Adapter" option requires a sequence to use as adapter during the trimming step.
+Before run SHOME-BIO, manually change the "config_file.txt". In this way, it is possible to choose the correct options for your analysis. The user can modify this file following the written examples. For some options is mandatory a complete path, while others just require a "yes" or "no". Only the "Adapter" option requires a sequence to use as adapter during the trimming step. Please change "your_path" with your absolute path.
 
 ### 3.2 - Download the databases
 
 In order to run a metagenomic analysis, you should download different genome reference for bacteria, protozoa or virus.
-We provide them and you can download them directly from here (https://drive.google.com/drive/folders/17PrBIJAjBP6XApBEvfBOsxfYliMsyVgf?usp=sharing). Inside the "Input" folder, it is also possible to download two .fastq test files in order to test the pipeline (this is optional).
+We provide a previously indexed version of all of them here (https://drive.google.com/drive/folders/17PrBIJAjBP6XApBEvfBOsxfYliMsyVgf?usp=sharing). 
+Moreover, inside the "Input" folder, it is also possible to download two paried-end .fastq test files in order to test the pipeline (this is optional).
 
 ### 3.3 - Run the pipeline
 
