@@ -22,7 +22,7 @@ Path host genome?
 Filter out contaminant? [yes/no] default -> no
 no
 
-Path contaminant genome?
+Path contaminant genome? (Not used if the previous answer is "no")
 /your_path/Genome/
 
 Adapter?
