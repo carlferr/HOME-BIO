@@ -35,17 +35,18 @@ Please change "your_path" with your absolute path.
 ### 3.2 - Download the databases
 
 In order to run a metagenomic analysis, you should download different genome reference for bacteria, protozoa or virus.
-We provide a previously indexed version of all of them here (https://drive.google.com/drive/folders/17PrBIJAjBP6XApBEvfBOsxfYliMsyVgf?usp=sharing). 
-Moreover, inside the "Input" folder, it is also possible to download two paried-end .fastq test files in order to test the pipeline (this is optional).
+We provide a previously indexed version of all of them here (https://drive.google.com/drive/folders/17PrBIJAjBP6XApBEvfBOsxfYliMsyVgf?usp=sharing). It is possible to download the entire zipped database folder, but, before run the analysis, please unzip it on your machine.
+Moreover, inside the "Input" folder, it is also possible to download two paried-end .fastq test files in order to test the pipeline on your system.
 
 ### 3.3 - Run the pipeline
 
+SHOME-BIO uses fastq (or fastq.gz) files as input. Remenber to put all your data in one unique folder ("Fastq_folder" in the code below)
 It is possible, now, to run SHOME-BIO just typing in the console:
 
 ```
 docker run -it --rm -v /your_path/SHOME-BIO/Script.py:/home/Script.py:ro -v /your_path/SHOME-BIO/config_file.txt:/home/config_file.txt:ro -v /your_fastq_path/Fastq_folder:/home/Input:ro -v /your_output_folder:/home/Output:rw -v /your_hg19_path/Bowtie2Index:/home/Genome:ro -v /your_path/KRAKENdb_bacteria:/home/Db_Kraken2_Kaiju_bacteria:ro -v /your_path/KRAKENdb_protozoa:/home/Db_Kraken2_Kaiju_protozoa:ro -v /your_path/KRAKENdb_viruses:/home/Db_Kraken2_Kaiju_viruses:ro -v /your_path/KAIJUdb:/home/Db_Kaiju:ro -v /your_path/KAIJUdb_virus:/home/Db_Kaiju_virus:ro   biohaz/shome_bio
 ```
-Please change "your_path" with your exact path. Each path after the -v option will be imported in the Docker container.
+**Please change "your_path" with your exact path.** Each path after the -v option will be imported in the Docker container.
 Running this command in your console, it automatically will call the Docker container and it will launch the analysis.
 
 ## 4 - LICENSE
