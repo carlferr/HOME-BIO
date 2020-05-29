@@ -2,17 +2,17 @@
 
 Despite the large amount of metagenomic shotgun data produced, there is a lack of a comprehensive and easy-use pipeline for data analysis that avoid annoying and complicated bioinformatics steps. Here we present **SHOME-BIO** (SHOtgun MEtagenomic analysis of BIOlogical entities), a modular and exhaustive pipeline for analysis of biological entity estimation, specific designed for shotgun sequenced clinical samples. SHOME-BIO analysis provides comprehensive taxonomy classification by querying different source database and carry out main steps in metagenomic investigation.
 
-SHOME-BIO is a dockerized solution for metagenomics. Inside a docker container, we installed UBUNTU with python 3.7 and Anaconda 3 (V. 2020/02). Inside an anaconda base environment, we installed two common metagenomics software, KAIJU (http://kaiju.binf.ku.dk/) and KRAKEN 2 (https://ccb.jhu.edu/software/kraken2/), and other mandatory softwares for the pipeline. For the complete list, please read our paper here (link)
+SHOME-BIO is a dockerized solution for metagenomics. Inside a docker container, we installed UBUNTU with python 3.7 and Anaconda 3 (V. 2020/02). Inside an anaconda base environment, we installed two common metagenomics software, [KAIJU](http://kaiju.binf.ku.dk/) and [KRAKEN 2](https://ccb.jhu.edu/software/kraken2/), and other mandatory softwares for the pipeline. For the complete list, please read our paper here (link)
 
 
 ## 1 - DOCKER INSTALLATION
 
-To use our pipeline, it is mandatory to install and run DOCKER (https://hub.docker.com/). Here (https://hub.docker.com/search?q=&type=edition&offering=community) you can find the correct version of DOCKER for your OS and all the infos about how to install and run docker. 
+To use our pipeline, it is mandatory to install and run DOCKER (https://hub.docker.com/). [Here](https://hub.docker.com/search?q=&type=edition&offering=community) you can find the correct version of DOCKER for your OS and all the infos about how to install and run docker. 
 
 
 ## 2 - PIPELINE INSTALLATION
 
-Run DOCKER on your PC or server and  install our Docker image pulling it from here (https://hub.docker.com/r/biohaz/shome_bio) or just type in your console:
+Run DOCKER on your PC or server and  install our Docker image pulling it from [here](https://hub.docker.com/r/biohaz/shome_bio) or just type in your console:
 ```
 docker pull biohaz/shome_bio:latest
 ```
@@ -35,7 +35,7 @@ Please change "your_path" with your absolute path.
 ### 3.2 - Download the databases
 
 In order to run a metagenomic analysis, you should download different genome reference for bacteria, protozoa or virus.
-We provide a previously indexed version of all of them here (https://drive.google.com/drive/folders/17PrBIJAjBP6XApBEvfBOsxfYliMsyVgf?usp=sharing). It is possible to download the entire zipped database folder, but, before run the analysis, please unzip it on your machine.
+We provide a previously indexed version of all of them [here](https://drive.google.com/drive/folders/17PrBIJAjBP6XApBEvfBOsxfYliMsyVgf?usp=sharing). It is possible to download the entire zipped database folder, but, before run the analysis, please unzip it on your machine.
 Moreover, inside the "Input" folder, it is also possible to download two paried-end .fastq test files in order to test the pipeline on your system.
 
 ### 3.3 - Run the pipeline
@@ -49,7 +49,7 @@ docker run -it --rm -v /your_path/SHOME-BIO/Script.py:/home/Script.py:ro -v /you
 **Please change "your_path" with your exact path.** Each path after the -v option will be imported in the Docker container.
 Running this command in your console, it automatically will call the Docker container and it will launch the analysis.
 
-## 4 - Outputs
+## 4 - OUTPUT
 
 SHOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab and graphic format (.png). In the Output folder, is it possible to find, for each sample, two folders. 
 
@@ -57,6 +57,6 @@ The first one with the output numbered folders for each tool used (e.g. "3_Bowti
 
 The second one with output files generated from the analysis in tab and .png format.
 In particular:
--.png files show abundance estimation of top 15 species classified in the queried databases (e.g. bacteria, virus, protozoi)
--report.txt file show classification data. All the entities classified are reported with information about protein validation.
--output.txt file show count of genera and species in each sample.
+- .png files show abundance estimation of top 15 species classified in the queried databases (e.g. bacteria, virus, protozoi)
+- report.txt file show classification data. All the entities classified are reported with information about protein validation.
+- output.txt file show count of genera and species in each sample.
