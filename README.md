@@ -49,5 +49,14 @@ docker run -it --rm -v /your_path/SHOME-BIO/Script.py:/home/Script.py:ro -v /you
 **Please change "your_path" with your exact path.** Each path after the -v option will be imported in the Docker container.
 Running this command in your console, it automatically will call the Docker container and it will launch the analysis.
 
-## 4 - LICENSE
-This is a free pipeline: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+## 4 - Outputs
+
+SHOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab and graphic format (.png). In the Output folder, is it possible to find, for each sample, two folders. 
+
+The first one with the output numbered folders for each tool used (e.g. "3_Bowtie2" with all the files generated from the alignment). 
+
+The second one with output files generated from the analysis in tab and .png format.
+In particular:
+-.png files show abundance estimation of top 15 species classified in the queried databases (e.g. bacteria, virus, protozoi)
+-report.txt file show classification data. All the entities classified are reported with information about protein validation.
+-output.txt file show count of genera and species in each sample.
