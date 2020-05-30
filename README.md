@@ -40,8 +40,8 @@ Moreover, inside the "Input" folder, it is also possible to download two paried-
 
 ### 3.3 - Run the pipeline
 
-HOME-BIO uses fastq (or fastq.gz) files as input. Remember to put all your data in one unique folder (e.g. "Fastq_folder").
-It is possible, now, to run SHOME-BIO just typing in the console:
+HOME-BIO uses fastq (or fastq.gz) files as input. Remember to put all your data in one unique folder (e.g. "Fastq_folder", "Data", "Input").
+It is possible, now, to run HOME-BIO just typing in the console:
 
 ```
 python HOME_Bio.py -c config_file.txt
@@ -50,7 +50,7 @@ Running this command in your console, it automatically will call the Docker cont
 
 ## 4 - OUTPUT
 
-HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab and graphic format (.png). In the Output folder, is it possible to find, for each sample, two folders. 
+HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab and graphic format (.png). In your output folder, it is possible to find, for each sample, two folders. 
 
 The first one with the output numbered folders for each tool used (e.g. "3_Bowtie2" with all the files generated from the alignment). 
 
