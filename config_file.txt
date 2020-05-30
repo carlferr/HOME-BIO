@@ -8,13 +8,13 @@ Number of threads? default -> 1
 16
 
 Path Fastq?
-/your_path/SHOME-BIO/Input/
+/your_path/HOME-BIO/Input/
 
 Paired-end? [yes/no] default -> yes
 yes
 
 Path output? 
-/your_path/SHOME-BIO/Output/
+/your_path/HOME-BIO/Output/
 
 Path host genome?
 /your_path/Genome/
@@ -34,5 +34,6 @@ yes
 DeNovo? [yes/no] default -> no
 yes
 
-
+Path genomes Kraken2 Kaiju
+/your_path/Db_Kraken2_Kaiju
 
