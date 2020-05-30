@@ -2,7 +2,7 @@
 
 Despite the large amount of metagenomic shotgun data produced, there is a lack of a comprehensive and easy-use pipeline for data analysis that avoid annoying and complicated bioinformatics steps. Here we present **HOME-BIO** (sHOtgun MEtagenomic analysis of BIOlogical entities), a modular and exhaustive pipeline for analysis of biological entity estimation, specific designed for shotgun sequenced clinical samples. SHOME-BIO analysis provides comprehensive taxonomy classification by querying different source database and carry out main steps in metagenomic investigation.
 
-SHOME-BIO is a dockerized solution for metagenomics. Inside a DOCKER image, we installed UBUNTU with python 3.7 and Anaconda 3 (V. 2020/02). Inside an anaconda base environment, we installed two common metagenomics software, [KAIJU](http://kaiju.binf.ku.dk/) and [KRAKEN 2](https://ccb.jhu.edu/software/kraken2/), and other mandatory softwares for the pipeline. For the complete list, please read our paper here (link)
+HOME-BIO is a dockerized solution for metagenomics. Inside a DOCKER image, we installed UBUNTU with python 3.7 and Anaconda 3 (V. 2020/02). Inside an anaconda base environment, we installed two common metagenomics software, [KAIJU](http://kaiju.binf.ku.dk/) and [KRAKEN 2](https://ccb.jhu.edu/software/kraken2/), and other mandatory softwares for the pipeline. For the complete list, please read our paper here (link)
 
 
 ## 1 - DOCKER INSTALLATION
