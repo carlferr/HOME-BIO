@@ -35,8 +35,8 @@ Please change "your_path" with your absolute path.
 ### 3.2 - Download the databases
 
 In order to run a metagenomic analysis, you should download different genome reference for bacteria, protozoa or virus.
-We provide a previously indexed version of all of them [here](https://drive.google.com/drive/folders/17PrBIJAjBP6XApBEvfBOsxfYliMsyVgf?usp=sharing). It is possible to download the entire zipped database folder, but, before run the analysis, please unzip it on your machine.
-Moreover, inside the "Input" folder, it is also possible to download two paried-end .fastq test files in order to test the pipeline on your system.
+We provide a previously indexed version of all of them [here](https://drive.google.com/drive/folders/17PrBIJAjBP6XApBEvfBOsxfYliMsyVgf?usp=sharing) (Db_Kraken2_Kaiju.zip). It is possible to download the entire zipped database folder, but, before run the analysis, please unzip it on your machine.
+Moreover, inside the "Input" folder, it is also possible to download two paried-end .fastq.gz test files in order to test the pipeline on your system.
 
 ### 3.3 - Run the pipeline
 
@@ -50,11 +50,11 @@ Running this command in your console, it automatically will call the Docker cont
 
 ## 4 - OUTPUT
 
-HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab and graphic format (.png). In your output folder, it is possible to find, for each sample, two folders. 
+HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab and graphic format (.png). In your output folder, it is possible to find, for each sample, some folders. 
 
-The first one with the output numbered folders for each tool used (e.g. "3_Bowtie2" with all the files generated from the alignment). 
+Most of them are output numbered folders for each tool used (e.g. "3_Bowtie2" with all the files generated from the alignment). 
 
-The second one with output files generated from the analysis in tab and .png format.
+The "Results" forlder has all the output files generated from the analysis in tab and .png format.
 In particular:
 - .png files show abundance estimation of top 15 species classified in the queried databases (e.g. bacteria, virus, protozoi)
 - report.txt file show classification data. All the entities classified are reported with information about protein validation.
