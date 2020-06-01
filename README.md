@@ -54,8 +54,5 @@ HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output 
 
 Most of them are output numbered folders for each tool used (e.g. "3_Bowtie2" with all the files generated from the alignment). 
 
-The "Results" forlder has all the output files generated from the analysis in tab and .png format.
-In particular:
-- .png files show abundance estimation of top 15 species classified in the queried databases (e.g. bacteria, virus, protozoi)
-- report.txt file show classification data. All the entities classified are reported with information about protein validation.
-- output.txt file show count of genera and species in each sample.
+The "Results" forlder has all the output files generated from the analysis in tabular and .png format.
+In particular  the ‘Metagenomic shotgun’ module generates a table containing the Kranken2 taxonomy profile and related Kaiju protein-validation information. A given taxon is considered protein-validated when both tools classify and assign reads to it. In addition, HOME-BIO generates output pie-charts in .png format with top 15 represented species with estimation of the relative abundance.
