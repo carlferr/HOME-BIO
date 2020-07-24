@@ -37,3 +37,5 @@ yes
 Path genomes Kraken2 Kaiju
 /your_path/Db_Kraken2_Kaiju
 
+DNA/RNA -> DNA
+RNA
