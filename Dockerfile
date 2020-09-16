@@ -15,8 +15,8 @@ RUN echo "export PATH=/opt/Anaconda3/bin:$PATH" > /etc/profile
 ENV PATH /opt/Anaconda3/bin:$PATH
 
 # Install libraries and softwares
-RUN apt-get update \
-	&& apt-get install -y python-matplotlib
+RUN apt-get update
+RUN apt-get install -y python3-matplotlib
 RUN pip3 install multiqc
 RUN source activate
 RUN conda update -n base -c defaults conda
