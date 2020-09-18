@@ -25,4 +25,4 @@ RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN python2.7 get-pip.py
 RUN pip2.7 install matplotlib
 
-ENTRYPOINT ["/usr/bin/python2", "./Script.py", "-c", "config.txt"]
+ENTRYPOINT ["/usr/bin/python2", "./Script.py", "-c", "config_file.txt"]
