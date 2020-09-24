@@ -2,12 +2,23 @@
 
 Despite the large amount of metagenomic shotgun data produced, there is a lack of a comprehensive and easy-use pipeline for data analysis that avoid annoying and complicated bioinformatics steps. Here we present **HOME-BIO** (sHOtgun MEtagenomic analysis of BIOlogical entities), a modular and exhaustive pipeline for analysis of biological entity estimation, specific designed for shotgun sequenced clinical samples. HOME-BIO analysis provides comprehensive taxonomy classification by querying different source database and carry out main steps in metagenomic investigation.
 
-HOME-BIO is a dockerized solution for metagenomics. Inside a DOCKER image, we installed UBUNTU with python 3.7 and Anaconda 3 (V. 2020/02). Inside an anaconda base environment, we installed two common metagenomics software, [KAIJU](http://kaiju.binf.ku.dk/) and [KRAKEN 2](https://ccb.jhu.edu/software/kraken2/), and other mandatory softwares for the pipeline. For the complete list, please read our paper here (link)
+HOME-BIO is a dockerized solution for metagenomics. Inside a DOCKER image, we installed UBUNTU with python 3.7, python 2.7, and Anaconda 3 (V. 2020/02). Inside an anaconda base environment, we installed two common metagenomics software, [KAIJU](http://kaiju.binf.ku.dk/) and [KRAKEN 2](https://ccb.jhu.edu/software/kraken2/), and other mandatory softwares for the pipeline. For the complete list, please read our paper here (link)
 
 
-## 1 - DOCKER INSTALLATION
+## 1 - DOCKER & PYTHON INSTALLATION
 
-To use our pipeline, it is mandatory to install and run DOCKER (https://hub.docker.com/). [Here](https://hub.docker.com/search?q=&type=edition&offering=community) you can find the correct version of DOCKER for your OS and all the infos about how to install and run DOCKER. 
+To use our pipeline, it is mandatory to install and run DOCKER (https://hub.docker.com/), and to install and use python 2.7. [Here](https://hub.docker.com/search?q=&type=edition&offering=community) you can find the correct version of DOCKER for your OS and all the infos about how to install and run DOCKER. To install python 2.7 there are several options depending on your OS:
+
+### Linux\Debian
+```
+sudo apt install python2.7
+```
+
+### Centos\RHEL\Fedora
+```
+sudo yum install python2
+```
+
 
 
 ## 2 - PIPELINE INSTALLATION
@@ -44,7 +55,7 @@ HOME-BIO uses fastq (or fastq.gz) files as input. Remember to put all your data 
 It is possible, now, to run HOME-BIO just typing in the console:
 
 ```
-python HOME_Bio.py -c config_file.txt
+python2.7 HOME_Bio.py -c config_file.txt
 ```
 Running this command in your console, it automatically will call the Docker container, read the path from config_file.txt and it will launch the analysis.
 
