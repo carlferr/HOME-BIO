@@ -20,7 +20,8 @@ sudo apt install python2.7
 sudo yum install python2
 ```
 
-#### Windows
+#### Windows\MacOS
+
 Just download and install it from [here](https://www.python.org/downloads/release/python-2718/)
 
 
