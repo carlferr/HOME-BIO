@@ -20,7 +20,7 @@ sudo apt install python2.7
 
 #### Centos\RHEL\Fedora
 ```
-sudo yum install python2
+sudo yum install python27
 ```
 
 #### Windows\MacOS
