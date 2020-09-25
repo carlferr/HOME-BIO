@@ -8,6 +8,7 @@ HOME-BIO is a dockerized solution for metagenomics. Inside a DOCKER image, we in
 ## 1 - DOCKER & PYTHON INSTALLATION
 
 To use our pipeline, it is mandatory to install and run DOCKER (https://hub.docker.com/), and to install and use python 2.7. [Here](https://hub.docker.com/search?q=&type=edition&offering=community) you can find the correct version of DOCKER for your OS and all the infos about how to install and run DOCKER.
+
 To install python 2.7 there are several options depending on your OS:
 
 #### Linux\Debian
