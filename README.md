@@ -53,7 +53,7 @@ Please change "your_path" with your absolute path.
 ### 3.2 - Download the databases
 
 In order to run a metagenomic analysis, you should download different genome reference for bacteria, protozoa or virus.
-We provide a previously indexed version of all of them [here](https://drive.google.com/drive/folders/17PrBIJAjBP6XApBEvfBOsxfYliMsyVgf?usp=sharing) (Db_Kraken2_Kaiju.zip). It is possible to download the entire zipped database folder, but, before run the analysis, please unzip it on your machine.
+We provide a previously indexed version of all of them [on Zenodo](https://doi.org/10.5281/zenodo.4055180) (DB_KKRAKEN2_KAIJU.zip). It is possible to download the entire zipped database folder, but, before run the analysis, please unzip it on your machine.
 Moreover, inside the "Input" folder, it is also possible to download two paried-end .fastq.gz test files in order to test the pipeline on your system.
 
 ### 3.3 - Run the pipeline
