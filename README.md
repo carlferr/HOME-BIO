@@ -46,9 +46,20 @@ git clone https://github.com/carlferr/HOME-BIO.git
 
 ### 3.1 Prepare the Config file
 
-Before run HOME-BIO, manually change the "config_file.txt". In this way, it is possible to choose the correct options for your analysis. The user can modify this file following the written examples. For some options is mandatory a complete path, while others just require a "yes" or "no". Only the "Adapter" option requires a sequence to use as adapter during the trimming step.
-If the contaminat filtering is not requested the "Path contaminant genome" is not used.
+Before run HOME-BIO, the users can manually change the "config_file.txt" or run the "make_config_file.py". 
+
+- In the first scenario, the user will manually modify the correct options for the analysis following the written examples. For some options is mandatory a complete path, while for others is required a "yes" or "no". Only the "Adapter" option requires a sequence to use as adapter during the trimming step.
+If the contaminat filtering is not requested the "Path contaminant genome" is not used but it is still mandatory to write something (leave "/your/path" or "none").
 Please change "your_path" with your absolute path.
+
+- It is also possible to create the config file in an automatic way using "make_config_file.py".
+Just type
+```
+python2.7 make_config_file.py
+```
+The script will prompt the questions on screen. Please, use complete pathways and answer to all question. The output will be a "config.txt".
+
+**If the automatic way is used, remember to run the pipeline using "-c config.txt"**
 
 ### 3.2 - Download the databases
 
