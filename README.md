@@ -1,17 +1,17 @@
 # HOME-BIO
 
-Despite the large amount of metagenomic shotgun data produced, there is a lack of a comprehensive and easy-use pipeline for data analysis that avoid annoying and complicated bioinformatics steps. Here we present **HOME-BIO** (sHOtgun MEtagenomic analysis of BIOlogical entities), a modular and exhaustive pipeline for analysis of biological entity estimation, specific designed for shotgun sequenced clinical samples. HOME-BIO analysis provides comprehensive taxonomy classification by querying different source database and carry out main steps in metagenomic investigation.
+Despite the large amount of metagenomic shotgun data produced, there is a lack of a comprehensive and easy-use pipeline for data analysis that avoids annoying and complicated bioinformatics steps. Here we present **HOME-BIO** (sHOtgun MEtagenomic analysis of BIOlogical entities), a modular and exhaustive pipeline for analysis of biological entity estimation, specifically designed for shotgun sequenced clinical samples. HOME-BIO analysis provides a comprehensive taxonomy classification by querying different source database and carry out the main steps in the metagenomic investigation.
 
-HOME-BIO is a dockerized solution for metagenomics. Inside a DOCKER image, we installed UBUNTU with python 3.7, python 2.7, and Anaconda 3 (V. 2020/02). Inside an anaconda base environment, we installed two common metagenomics software, [KAIJU](http://kaiju.binf.ku.dk/) and [KRAKEN 2](https://ccb.jhu.edu/software/kraken2/), and other mandatory softwares for the pipeline. For the complete list, please read our paper here (link)
+HOME-BIO is a dockerized solution for metagenomics. Inside a DOCKER image, we installed UBUNTU with Python 3.7, Python 2.7, and Anaconda 3 (V. 2020/02). Inside an anaconda base environment, we installed two common metagenomics software, [KAIJU](http://kaiju.binf.ku.dk/) and [KRAKEN 2](https://ccb.jhu.edu/software/kraken2/), and other mandatory software for the pipeline. For the complete list, please read our paper here (link)
 
 
 ## 1 - DOCKER & PYTHON INSTALLATION
 
-To use our pipeline, it is mandatory to install and run DOCKER (https://hub.docker.com/), and to install and use python 2.7.
+To use our pipeline, it is mandatory to install and run DOCKER (https://hub.docker.com/) and to install and use python 2.7.
 
-- [Here](https://hub.docker.com/search?q=&type=edition&offering=community) you can find the correct version of DOCKER for your OS and all the infos about how to install and run DOCKER.
+- [Here](https://hub.docker.com/search?q=&type=edition&offering=community) you can find the correct version of DOCKER for your OS and all the info about how to install and run DOCKER.
 
-- To install python 2.7 there are several options depending on your OS:
+- To install Python 2.7 there are several options depending on your OS:
 
 #### Linux\Debian
 ```
@@ -49,7 +49,7 @@ git clone https://github.com/carlferr/HOME-BIO.git
 Before run HOME-BIO, the users can manually change the "config_file.txt" or run the "make_config_file.py". 
 
 - In the first scenario, the user will manually modify the correct options for the analysis following the written examples. For some options is mandatory a complete path, while for others is required a "yes" or "no". Only the "Adapter" option requires a sequence to use as adapter during the trimming step.
-If the contaminat filtering is not requested the "Path contaminant genome" is not used but it is still mandatory to write something (leave "/your/path" or "none").
+If the contaminant filtering is not requested the "Path contaminant genome" is not used but it is still mandatory to write something (leave "/your/path" or "none").
 Please change "your_path" with your absolute path.
 
 - It is also possible to create the config file in an automatic way using "make_config_file.py".
@@ -57,14 +57,14 @@ Just type
 ```
 python2.7 make_config_file.py
 ```
-The script will prompt the questions on screen. Please, use complete pathways and answer to all question. The output will be a "config.txt".
+The script will prompt the questions on the screen. Please, use complete pathways and answer all the questions. The output will be a "config.txt".
 
 **If the automatic way is used, remember to run the pipeline using "-c config.txt"**
 
 ### 3.2 - Download the databases
 
-In order to run a metagenomic analysis, you should download different genome reference for bacteria, protozoa or virus.
-We provide a previously indexed version of all of them [on Zenodo](https://doi.org/10.5281/zenodo.4055180) (DB_KKRAKEN2_KAIJU.zip). It is possible to download the zipped folder, but, before run the analysis, please unzip it on your machine.
+To run a metagenomic analysis, you should download different genome references for bacteria, protozoa, or virus.
+We provide a previously indexed version of all of them [on Zenodo](https://doi.org/10.5281/zenodo.4055180) (DB_KKRAKEN2_KAIJU.zip). It is possible to download the zipped folder, but, before running the analysis, please unzip it on your machine.
 
 ### 3.3 - Run the pipeline
 
@@ -84,5 +84,5 @@ HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output 
 
 Most of them are output numbered folders for each tool used (e.g. "3_Bowtie2" with all the files generated from the alignment). 
 
-The "Results" forlder has all the output files generated from the analysis in tabular and .png format.
-In particular  the ‘Metagenomic shotgun’ module generates a table containing the Kranken2 taxonomy profile and related Kaiju protein-validation information. A given taxon is considered protein-validated when both tools classify and assign reads to it. In addition, HOME-BIO generates output pie-charts in .png format with top 15 represented species with estimation of the relative abundance.
+The "Results" folder has all the output files generated from the analysis in tabular and .png format.
+In particular,  the "Metagenomic shotgun" module generates a table containing the Kranken2 taxonomy profile and related Kaiju protein-validation information. A given taxon is considered protein-validated when both tools classify and assign reads to it. In addition, HOME-BIO generates output pie-charts in .png format with the top 15 represented species with the estimation of the relative abundance.
