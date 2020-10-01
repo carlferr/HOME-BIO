@@ -1,6 +1,6 @@
 FROM biohaz/basic_ubuntu:latest
 
-# Locale for click
+# Locale
 ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
 
