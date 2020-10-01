@@ -49,7 +49,7 @@ git clone https://github.com/carlferr/HOME-BIO.git
 Before run HOME-BIO, the users can manually change the "config_file.txt" or run the "make_config_file.py". 
 
 - In the first scenario, the user will manually modify the correct options for the analysis following the written examples. For some options is mandatory a complete path, while for others is required a "yes" or "no". Only the "Adapter" option requires a sequence (in capital letters) to use as adapter during the trimming step.
-For the "k-mers" option, HOME-BIO is set to "auto". In this way, SPADES will choose the best k-mer lenght depending on the reads lenght. Only a comma-separated list of k-mer sizes can be used (all values must be odd, less than 128 and listed in ascending order. e.g. 21,33,55) For more details see [SPADES manual](http://cab.spbu.ru/files/release3.13.0/manual.html)
+For the "k-mers" option, HOME-BIO is set to "auto". In this way, SPADES will choose the best k-mer length depending on the reads length. Only a comma-separated list of k-mer sizes can be used (all values must be odd, less than 128 and listed in ascending order. e.g. 21,33,55) For more details see [SPADES manual](http://cab.spbu.ru/files/release3.13.0/manual.html)
 If the contaminant filtering is not requested the "Path contaminant genome" is not used but it is still mandatory to write something (e.g. "/your_path/" or "none").
 
 Please change "your_path" with your absolute path.
