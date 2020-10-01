@@ -59,7 +59,8 @@ Just type
 ```
 python2.7 make_config_file.py
 ```
-The script will prompt the questions on the screen. Please, use complete pathways and answer all the questions. The output will be a "config.txt".
+The script will prompt the questions on the screen. Please, use complete pathways and answer all the questions.
+It will create a "config.txt" file.
 
 **If the automatic way is used, remember to run the pipeline using "-c config.txt"**
 
