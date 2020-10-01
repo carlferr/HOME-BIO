@@ -13,7 +13,7 @@ RUN rm /tmp/Anaconda3-2020.02-Linux-x86_64.sh
 RUN echo "export PATH=/opt/Anaconda3/bin:$PATH" > /etc/profile
 ENV PATH /opt/Anaconda3/bin:$PATH
 
-# Softwares
+# Software
 RUN apt-get update 
 RUN pip3 install multiqc
 RUN source activate
