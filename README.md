@@ -48,8 +48,10 @@ git clone https://github.com/carlferr/HOME-BIO.git
 
 Before run HOME-BIO, the users can manually change the "config_file.txt" or run the "make_config_file.py". 
 
-- In the first scenario, the user will manually modify the correct options for the analysis following the written examples. For some options is mandatory a complete path, while for others is required a "yes" or "no". Only the "Adapter" option requires a sequence to use as adapter during the trimming step.
-If the contaminant filtering is not requested the "Path contaminant genome" is not used but it is still mandatory to write something (leave "/your/path" or "none").
+- In the first scenario, the user will manually modify the correct options for the analysis following the written examples. For some options is mandatory a complete path, while for others is required a "yes" or "no". Only the "Adapter" option requires a sequence (in capital letters) to use as adapter during the trimming step.
+For the "k-mers" option, HOME-BIO is set to "auto". In this way, SPADES will choose the best k-mer lenght depending on the reads lenght. Only a comma-separated list of k-mer sizes can be used (all values must be odd, less than 128 and listed in ascending order. e.g. 21,33,55) For more details see [SPADES manual](http://cab.spbu.ru/files/release3.13.0/manual.html)
+If the contaminant filtering is not requested the "Path contaminant genome" is not used but it is still mandatory to write something (e.g. "/your_path/" or "none").
+
 Please change "your_path" with your absolute path.
 
 - It is also possible to create the config file in an automatic way using "make_config_file.py".
@@ -74,6 +76,11 @@ It is possible, now, to run HOME-BIO just typing in the console:
 ```
 python2.7 HOME_Bio.py -c config_file.txt
 ```
+or (if the config was generated automatically)
+```
+python2.7 HOME_Bio.py -c config.txt
+```
+
 Running this command in your console, it automatically will call the Docker container, will read the paths from the config_file.txt and it will launch the analysis.
 
 It is possible to test the pipeline using our test dataset (just two paired-end .fastq files) freely available [here](https://doi.org/10.5281/zenodo.4061297) on Zenodo.
