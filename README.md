@@ -65,6 +65,8 @@ python2.7 HOME_Bio.py -c config_file.txt
 ```
 Running this command in your console, it automatically will call the Docker container, will read the paths from the config_file.txt and it will launch the analysis.
 
+It is possible to test the pipeline using our test dataset (just two paired-end .fastq files) freely available [here](https://doi.org/10.5281/zenodo.4061297) on Zenodo.
+
 ## 4 - OUTPUT
 
 HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab and graphic format (.png). In your output folder, it is possible to find, for each sample, some folders. 
