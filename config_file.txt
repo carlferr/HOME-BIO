@@ -1,0 +1,47 @@
+Quality Control before Trimming [yes/no] default -> no
+yes
+
+Quality Control after Trimming [yes/no] default -> no
+yes
+
+Number of threads [n] default -> 1
+10
+
+Path Fastq
+/root/Scrivania/input2
+
+Paired-end? [yes/no] default -> yes
+yes
+
+Path output
+/root/Scrivania/output2
+
+Path host genome
+/mnt/NFS_SHARE_2/Genomi/hg38_NCBI/NCBI/GRCh38/Sequence/Bowtie2Index
+
+Filter out contaminant [yes/no] default -> no
+no
+
+Path contaminant genome (Not used if the previous answer is "no")
+/your_path/Genome/
+
+Adapter?
+CTGTCTCTTATA
+
+Shotgun module [yes/no] default -> no
+yes
+
+Assembly DeNovo module [yes/no] default -> no
+yes
+
+Path Kraken2 & Kaiju databases 
+/root/Scaricati/
+
+Kraken2 confidence [FLOAT 0 to 1] default -> 0.5
+0.5
+
+Nucleic acid type [DNA/RNA] default -> DNA
+DNA
+
+k-mer size used in Assembly DeNovo module (must be odd and less than 128) default -> auto
+21,33,55
