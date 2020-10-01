@@ -71,7 +71,7 @@ We provide a previously indexed version of all of them [on Zenodo](https://doi.o
 ### 3.3 - Run the pipeline
 
 HOME-BIO uses fastq (or fastq.gz) files as input. Remember to put all your data in one unique folder (e.g. "Fastq_folder", "Data", "Input").
-It is possible, now, to run HOME-BIO just typing in the console:
+It is possible, now, to run HOME-BIO just typing in the console (for Linux\Debian\Centos\RHEL\Fedora):
 
 ```
 python2.7 HOME_Bio.py -c config_file.txt
@@ -81,9 +81,15 @@ or (if the config was generated automatically)
 python2.7 HOME_Bio.py -c config.txt
 ```
 
+For Windows users, type
+```
+C:\python27\python.exe HOME_Bio.py -c config_file.txt
+```
+
 Running this command in your console, it automatically will call the Docker container, will read the paths from the config_file.txt and it will launch the analysis.
 
 It is possible to test the pipeline using our test dataset (just two paired-end .fastq files) freely available [here](https://doi.org/10.5281/zenodo.4061297) on Zenodo.
+
 
 ## 4 - OUTPUT
 
