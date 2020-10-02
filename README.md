@@ -65,7 +65,7 @@ It will create a "config.txt" file.
 
 ### 3.2 - Download the databases
 
-To run a metagenomic analysis, you should download different genome references for bacteria, protozoa, or virus.
+To run a metagenomic analysis, you should download different genome/protein references for bacteria, protozoa, or virus.
 We provide a previously indexed version of all of them [on Zenodo](https://doi.org/10.5281/zenodo.4055180) (DB_KKRAKEN2_KAIJU.zip). It is possible to download the zipped folder, but, before running the analysis, please unzip it on your machine.
 
 ### 3.3 - Run the pipeline
