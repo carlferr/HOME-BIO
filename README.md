@@ -50,7 +50,7 @@ Before run HOME-BIO, the users can manually change the "config_file.txt" or run 
 
 - In the first scenario, the user will manually modify the correct options for the analysis following the written examples. For some options is mandatory an absolute path, while for others is required a "yes" or "no". Only the "Adapter" option requires a sequence (in capital letters) to use as adapter during the trimming step.
 For the "k-mers" option, HOME-BIO is set to "auto". In this way, SPADES will choose the best k-mer length depending on the reads length. Only a comma-separated list of k-mer sizes can be used (all values must be odd, less than 128 and listed in ascending order. e.g. 21,33,55). For more details see [SPADES manual](http://cab.spbu.ru/files/release3.13.0/manual.html).
-If the contaminant filtering is not requested the "Path contaminant genome" is not used but it is still mandatory to write something (e.g. "/your_path/" or "none").
+If the contaminant filtering is not requested the "Path contaminant genome" is not used but it is still mandatory to write something (e.g., "/your_path/" or "none").
 
 
 - It is also possible to create the config file in an automatic way using "make_config_file.py".
@@ -65,12 +65,12 @@ It will create a "config.txt" file.
 
 ### 3.2 - Download the databases
 
-To run a metagenomic analysis, you should download different genome/protein references for bacteria, protozoa, or virus.
+To run a metagenomic analysis, you should download genome/protein reference databases for bacteria, protozoa, or virus.
 We provide a previously indexed version of all of them [on Zenodo](https://doi.org/10.5281/zenodo.4055180) (DB_KKRAKEN2_KAIJU.zip). It is possible to download the zipped folder, but, before running the analysis, please unzip it on your machine.
 
 ### 3.3 - Run the pipeline
 
-HOME-BIO uses fastq (or fastq.gz) files as input. Remember to put all your data in one unique folder (e.g. "Fastq_folder", "Data", "Input").
+HOME-BIO uses fastq (or fastq.gz) files as input. Remember to put all your data in one unique folder (e.g., "Fastq_folder", "Data", "Input").
 It is possible, now, to run HOME-BIO just typing in the console (for Linux\Debian\Centos\RHEL\Fedora):
 
 ```
@@ -86,16 +86,15 @@ For Windows users, type
 C:\python27\python.exe HOME_Bio.py -c config_file.txt
 ```
 
-Running this command in your console, it automatically will call the Docker container, will read the paths from the config_file.txt and it will launch the analysis.
+Running this command in your console, it will automatically call the Docker container, read the paths from the config_file.txt, and it will launch the analysis.
 
 It is possible to test the pipeline using our test dataset (just two paired-end .fastq files) freely available [here](https://doi.org/10.5281/zenodo.4061297) on Zenodo.
 
 
 ## 4 - OUTPUT
 
-HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab and graphic format (.png). In your output folder, it is possible to find, for each sample, some folders. 
-
-Most of them are output numbered folders for each tool used (e.g. "3_Bowtie2" with all the files generated from the alignment). 
+HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab and graphic format (.png). 
+In your output folder, it is possible to find, for each sample, numbered folders for each tool used (e.g., "3_Bowtie2" with all the files generated from the alignment). 
 
 The "Results" folder has all the output files generated from the analysis in tabular and .png format.
 In particular,  the "Metagenomic shotgun" module generates a table containing the Kranken2 taxonomy profile and related Kaiju protein-validation information. A given taxon is considered protein-validated when both tools classify and assign reads to it. In addition, HOME-BIO generates output pie-charts in .png format with the top 15 represented species with the estimation of the relative abundance.
