@@ -94,7 +94,7 @@ It is possible to test the pipeline using our test dataset (just two paired-end 
 ## 4 - OUTPUT
 
 HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab-delimited (.txt) and graphic (.png) format. In the output folder, it is possible to find, numbered folders for each tool used (e.g. “3_Bowtie2_Alignment” with all the files generated from the alignment; “5_SPADES_Assembly_DeNovo” folder contains per-sample Assembly de novo module output). HOME-BIO generates also a log.txt file containing all the messages prompted by the script during the analysis.
-The **"9_Results"** folder has the final output of each module performed in HOME-BIO with results of taxonomic classification of analyzed samples.
+The **"9_Results"** folder has the final output of each module performed in HOME-BIO with the results of the taxonomic classification for the analyzed samples.
 
 ## 5 - REQUIREMENTS
 
