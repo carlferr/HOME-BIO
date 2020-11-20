@@ -101,5 +101,6 @@ The **"9_Results"** folder has the final output of each module performed in HOME
 It is mandatory to have at least 400 GB of available space on the disk to extract the compressed folder of provided databases. It is NOT mandatory to use our previously indexed databases, but the user will have to create his own databases and then, index them with Kraken2 and Kaiju. See the instruction on Kraken2 and Kaiju user manuals.
 Other resource requirements will vary greatly based on the size of input data being processed.
 
-Minimum requirements: 1 CPU, 4 GB RAM. 
-Recommended requirements: 8+ CPU, 32+ GB RAM.
+Minimum requirements: 1 CPU, 4 GB RAM.
+
+Recommended requirements: 4+ CPU, 16+ GB RAM.
