@@ -93,8 +93,13 @@ It is possible to test the pipeline using our test dataset (just two paired-end 
 
 ## 4 - OUTPUT
 
-HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab and graphic format (.png). 
-In your output folder, it is possible to find, for each sample, numbered folders for each tool used (e.g., "3_Bowtie2" with all the files generated from the alignment). 
+HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab-delimited (.txt) and graphic (.png) format. In the output folder, it is possible to find, numbered folders for each tool used (e.g. “3_Bowtie2_Alignment” with all the files generated from the alignment; “5_SPADES_Assembly_DeNovo” folder contains per-sample Assembly de novo module output). HOME-BIO generates also a log.txt file containing all the messages prompted by the script during the analysis.
+The **"9_Results"** folder has the final output of each module performed in HOME-BIO with results of taxonomic classification of analyzed samples.
 
-The "Results" folder has all the output files generated from the analysis in tabular and .png format.
-In particular,  the "Metagenomic shotgun" module generates a table containing the Kranken2 taxonomy profile and related Kaiju protein-validation information. A given taxon is considered protein-validated when both tools classify and assign reads to it. In addition, HOME-BIO generates output pie-charts in .png format with the top 15 represented species with the estimation of the relative abundance.
+## 5 - REQUIREMENTS
+
+It is mandatory to have at least 400 GB of available space on the disk to extract the compressed folder of provided databases. It is NOT mandatory to use our previously indexed databases, but the user will have to create his own databases and then, index them with Kraken2 and Kaiju. See the instruction on Kraken2 and Kaiju user manuals.
+Other resource requirements will vary greatly based on the size of input data being processed.
+
+Minimum requirements: 1 CPU, 4 GB RAM. 
+Recommended requirements: 8+ CPU, 32+ GB RAM.
