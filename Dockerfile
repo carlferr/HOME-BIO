@@ -16,14 +16,10 @@ ENV PATH /opt/Anaconda3/bin:$PATH
 # Software
 RUN apt-get update 
 RUN pip3 install multiqc
+RUN pip install configparser
 RUN source activate
 RUN conda update -n base -c defaults conda
 RUN conda install -c bioconda -c conda-forge fastqc cutadapt bowtie bowtie2 star kraken2 bracken spades kaiju krona
 
-# pip & matplotlib for python2.7
-RUN wget https://bootstrap.pypa.io/get-pip.py
-RUN python2.7 get-pip.py
-RUN pip2.7 install matplotlib
-
-ENTRYPOINT ["/usr/bin/python2", "./Script.py", "-c", "config_file.txt"]
+ENTRYPOINT ["/usr/bin/python3", "./Script.py", "-c", "config_file.txt"]
 #END
