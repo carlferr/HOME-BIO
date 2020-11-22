@@ -1,0 +1,31 @@
+[DEFAULT]
+quality control before trimming [yes/no] = no
+quality control after trimming [yes/no] = no
+number of threads [n] = 1
+paired-end? [yes/no] = yes
+filter out contaminant [yes/no] = no
+adapter? = CTGTCTCTTATA
+shotgun module [yes/no] = no
+assembly denovo module [yes/no] = no
+kraken2 confidence = 0.5
+nucleic acid type [dna/rna] = DNA
+k-mer [auto/21,33,55,77] = auto
+
+[CUSTOM]
+quality control before trimming [yes/no] = yes
+quality control after trimming [yes/no] = yes
+number of threads [n] = 10
+path fastq = /root/Scrivania/input
+paired-end? [yes/no] = yes
+path output = /home/genomi/output/
+path host genome = /mnt/NFS_SHARE_2/Genomi/hg38_NCBI/NCBI/GRCh38/Sequence/Bowtie2Index/
+filter out contaminant [yes/no] = no
+path contaminant genome = /root/Scrivania/HOME-BIO-master/Genome/
+adapter? = CTGTCTCTTATA
+shotgun module [yes/no] = yes
+assembly denovo module [yes/no] = yes
+path kraken2 & kaiju databases = /root/Scaricati
+kraken2 confidence = 0.5
+nucleic acid type [dna/rna] = DNA
+k-mer [auto/21,33,55,77] = auto
+
