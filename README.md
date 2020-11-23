@@ -48,22 +48,20 @@ git clone https://github.com/carlferr/HOME-BIO.git
 
 ### 3.1 Prepare the Config file
 
-Before run HOME-BIO, the users can manually change the "config_file.txt" or run the "make_config_file.py". 
+Before run HOME-BIO, the users can manually change the "config_file.txt". 
 
-- In the first scenario, the user will manually modify the correct options for the analysis following the written examples. For some options is mandatory an absolute path, while for others is required a "yes" or "no". Only the "Adapter" option requires a sequence (in capital letters) to use as adapter during the trimming step.
+In details, the user will manually modify the correct options for the analysis following the written examples. For some options is mandatory an absolute path, while for others is required a "yes" or "no". Only the "Adapter" option requires a sequence (in capital letters) to use as adapter during the trimming step.
 For the "k-mers" option, HOME-BIO is set to "auto". In this way, SPADES will choose the best k-mer length depending on the reads length. Only a comma-separated list of k-mer sizes can be used (all values must be odd, less than 128 and listed in ascending order. e.g., 21,33,55). For more details see [SPADES manual](http://cab.spbu.ru/files/release3.13.0/manual.html).
 If the contaminant filtering is not requested the "Path contaminant genome" is not used but it is still mandatory to write something (e.g., "/your_path/" or "none").
 
-
-- It is also possible to create the config file in an automatic way using "make_config_file.py".
+It is also possible to recreate the config_file using Config_file_creator.py.
 Just type
 ```
-python2.7 make_config_file.py
+python Config_file_creator.py
 ```
-The script will prompt the questions on the screen. Please, use complete pathways and answer all the questions.
-It will create a "config.txt" file.
+It will create the "config_file.txt" or, if it is still present in the folder, rewrite it.
 
-**If the automatic way is used, remember to run the pipeline using "-c config.txt"**
+
 
 ### 3.2 - Download the databases
 
@@ -76,16 +74,12 @@ HOME-BIO uses fastq (or fastq.gz) files as input. Remember to put all your data 
 It is possible, now, to run HOME-BIO just typing in the console (for Linux\Debian\Centos\RHEL\Fedora):
 
 ```
-python2.7 HOME_Bio.py -c config_file.txt
-```
-or (if the config was generated automatically)
-```
-python2.7 HOME_Bio.py -c config.txt
+python HOME_Bio.py -c config_file.txt
 ```
 
 For Windows users, type
 ```
-C:\python27\python.exe HOME_Bio.py -c config_file.txt
+python HOME_Bio_windows.py -c config_file.txt
 ```
 
 Running this command in your console, it will automatically call the Docker container, read the paths from the config_file.txt, and it will launch the analysis.
@@ -97,6 +91,7 @@ It is possible to test the pipeline using our test dataset (just two paired-end 
 
 HOME-BIO modules (Shotgun metagenomic and Assembly de novo) will produce output files in tab-delimited (.txt) and graphic (.png) format. In the output folder, it is possible to find, numbered folders for each tool used (e.g. “3_Bowtie2_Alignment” with all the files generated from the alignment; “5_SPADES_Assembly_DeNovo” folder contains per-sample Assembly de novo module output). HOME-BIO generates also a log.txt file containing all the messages prompted by the script during the analysis.
 The **"9_Results"** folder has the final output of each module performed in HOME-BIO with the results of the taxonomic classification for the analyzed samples.
+
 
 ## 5 - REQUIREMENTS
 
