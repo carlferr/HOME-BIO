@@ -2,7 +2,7 @@
 
 Despite the large amount of metagenomic shotgun data produced, there is a lack of a comprehensive and easy-use pipeline for data analysis that avoids annoying and complicated bioinformatics steps. Here, we present **HOME-BIO** (sHOtgun MEtagenomic analysis of BIOlogical entities), a modular and exhaustive pipeline for analysis of biological entity estimation, specifically designed for shotgun sequenced clinical samples. HOME-BIO analysis provides a comprehensive taxonomy classification by querying different source database and carry out the main steps in the metagenomic investigation.
 
-HOME-BIO is a dockerized solution for metagenomics. Inside a DOCKER image, we installed UBUNTU with Python 3.7 and Anaconda 3 (V. 2020/02). Inside an anaconda base environment, we installed two common metagenomics software, [KAIJU](http://kaiju.binf.ku.dk/) and [KRAKEN 2](https://ccb.jhu.edu/software/kraken2/), and other mandatory software for the pipeline. For more details, please read our paper here (link)
+HOME-BIO is a dockerized solution for metagenomics. Inside a DOCKER image, we installed UBUNTU with Python 3.8 and Anaconda 3 (V. 2020/02). Inside an anaconda base environment, we installed two common metagenomics software, [KAIJU](http://kaiju.binf.ku.dk/) and [KRAKEN 2](https://ccb.jhu.edu/software/kraken2/), and other mandatory software for the pipeline. For more details, please read our paper here (link)
 
 
 ## 1 - DOCKER & PYTHON INSTALLATION
@@ -11,21 +11,23 @@ To use our pipeline, it is mandatory to install and run DOCKER (https://hub.dock
 
 - [Here](https://hub.docker.com/search?q=&type=edition&offering=community) you can find the correct version of DOCKER for your OS and all the info about how to install and run DOCKER.
 
-- To install Python 2.7 there are several options depending on your OS:
+- To install Python 3 there are several options depending on your OS:
 
 #### Linux\Debian
 ```
-sudo apt install python2.7
+sudo apt update
+sudo apt-get install python3.8
 ```
 
 #### Centos\RHEL\Fedora
 ```
-sudo yum install python27
+sudo yum update -y
+sudo yum install -y python3
 ```
 
 #### Windows\MacOS
 
-Just download and install it from [here](https://www.python.org/downloads/release/python-2718/)
+Just download and install it from [here](https://www.python.org/downloads/windows/)
 
 
 ## 2 - PIPELINE INSTALLATION
