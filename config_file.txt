@@ -14,8 +14,8 @@ k-mer [auto/21,33,55,77] = auto
 [CUSTOM]
 quality control before trimming [yes/no] = yes
 quality control after trimming [yes/no] = yes
-number of threads [n] = 10
-path fastq = /root/Scrivania/input
+number of threads [n] = 16
+path fastq = /root/Scrivania/HOME-BIO-master/fastq/
 paired-end? [yes/no] = yes
 path output = /home/genomi/output/
 path host genome = /mnt/NFS_SHARE_2/Genomi/hg38_NCBI/NCBI/GRCh38/Sequence/Bowtie2Index/
