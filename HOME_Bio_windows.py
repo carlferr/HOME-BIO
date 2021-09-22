@@ -83,9 +83,9 @@ def main(argv):
 
 	cwd = os.getcwd()
 	#os.seteuid(1000)
-	os.system("docker run -it --rm -v "+cwd+"/Script.py:/home/Script.py:ro -v "+cwd+"/config_file.txt:/home/config_file.txt:ro -v "+path_fastq+"/:/home/Input:ro -v "+split_output_path+"/:/home/Output:rw -v "+path_genome+":/home/Genome:ro -v "+path_kaiju+"/KRAKENdb_bacteria:/home/Db_Kraken2_Kaiju_bacteria:ro -v "+path_kaiju+"/KRAKENdb_protozoa:/home/Db_Kraken2_Kaiju_protozoa:ro -v "+path_kaiju+"/KRAKENdb_viruses:/home/Db_Kraken2_Kaiju_viruses:ro -v "+path_kaiju+"/KAIJUdb:/home/Db_Kaiju:ro biohaz/home_bio")
+	os.system("""docker run -it --rm -v "{}\Script.py:/home/Script.py:ro" -v "{}\config_file.txt:/home/config_file.txt:ro" -v "{}\:/home/Input:ro" -v "{}\:/home/Output:rw" -v "{}\:/home/Genome:ro" -v "{}\KRAKENdb_bacteria:/home/Db_Kraken2_Kaiju_bacteria:ro" -v "{}\KRAKENdb_protozoa:/home/Db_Kraken2_Kaiju_protozoa:ro" -v "{}\KRAKENdb_viruses:/home/Db_Kraken2_Kaiju_viruses:ro" -v "{}\KAIJUdb:/home/Db_Kaiju:ro" biohaz/home_bio""" .format(cwd, cwd, path_fastq, split_output_path, path_genome, path_kaiju, path_kaiju, path_kaiju, path_kaiju))
 
-		
+	
 			
 			
 if __name__ == "__main__":
