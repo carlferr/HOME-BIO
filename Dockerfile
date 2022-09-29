@@ -1,4 +1,4 @@
-FFROM biohaz/basic_ubuntu:latest
+FROM biohaz/basic_ubuntu:latest
 
 # Locale
 ENV LC_ALL C.UTF-8
